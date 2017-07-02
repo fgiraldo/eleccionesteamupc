@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1c77626e-8a46-4161-ba5a-85ea6c1c71da" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56837/MilitanteService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MilitanteService.xsd" MetadataType="Schema" ID="ef069118-fe1f-4a06-aef3-294c012161f7" SourceId="1" SourceUrl="http://localhost:56837/MilitanteService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MilitanteService1.xsd" MetadataType="Schema" ID="b0faab17-6ff7-45fc-b662-03fb022426c1" SourceId="1" SourceUrl="http://localhost:56837/MilitanteService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MilitanteService2.xsd" MetadataType="Schema" ID="37988843-51aa-41a2-a695-5ccc08fffbb9" SourceId="1" SourceUrl="http://localhost:56837/MilitanteService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MilitanteService.disco" MetadataType="Disco" ID="1951feec-067d-40ac-8a06-5ee5f0db9486" SourceId="1" SourceUrl="http://localhost:56837/MilitanteService.svc?disco" />
+    <MetadataFile FileName="MilitanteService.wsdl" MetadataType="Wsdl" ID="755e1c9d-71c1-4309-b2b4-0c3d82e1097f" SourceId="1" SourceUrl="http://localhost:56837/MilitanteService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
