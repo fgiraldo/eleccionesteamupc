@@ -75,6 +75,7 @@
     <Compile Include="ConnectionFactory.cs" />
     <Compile Include="Constantes.cs" />
     <Compile Include="DetalleActa.cs" />
+    <Compile Include="Dominio\Test.cs" />
     <Compile Include="FiltroListarMilitante.cs" />
     <Compile Include="HelloService.svc.cs">
       <DependentUpon>HelloService.svc</DependentUpon>
