@@ -17,6 +17,7 @@ estado, nombre_archivo, observaciones) values(@id_mesa, @id_militante_presidente
 
         private const string SQL_INSERT_DETALLE_ACTA = @"insert into detalle_acta (id_mesa, id_militante, cant_votos) values(@id_mesa, @id_militante, @cant_votos)";
 
+
         public void RegistrarActa(Acta acta)
         {
             using (SqlConnection conn = ConnectionFactory.getConnection())
