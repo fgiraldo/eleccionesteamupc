@@ -5,6 +5,8 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using System.IO;
+using System.ServiceModel.Web;
+using System.Net;
 
 namespace EleccionesWS
 {
@@ -144,8 +146,9 @@ namespace EleccionesWS
                 }
 
             }
-             
-
+            
         }
+
+       
     }
 }

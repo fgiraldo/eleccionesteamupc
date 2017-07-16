@@ -60,5 +60,77 @@ estado, nombre_archivo, observaciones) values(@id_mesa, @id_militante_presidente
                 }  
             }
         }
+
+        public ResultadoVotacion[] listarResultadosVotacion(string idDepartamento, string idProvincia, string idDistrito)
+        {
+            using (SqlConnection conn = ConnectionFactory.getConnection())
+            {
+                conn.Open();
+                string sql = @" select
+        da.id_militante, (mil.nombres + ' ' + mil.apellidos) as nombre_candidato, 
+        sum(da.cant_votos) as cant_votos
+        from detalle_acta da
+		join acta a on da.id_mesa = a.id_mesa
+        join mesa m  on da.id_mesa = m.id_mesa
+        join centro_votacion cv on m.id_centro_votacion = cv.id_centro_votacion 
+        join militante mil on da.id_militante = mil.id_militante   
+	    where a.estado = 1 "; 
+                if (idDepartamento != null && idProvincia != null && idDistrito != null)
+                {
+                    sql += " and cv.id_departamento = @id_departamento and cv.id_provincia = @id_provincia and cv.id_distrito = @id_distrito"; 
+                }
+                else if (idDepartamento != null && idProvincia != null && idDistrito == null)
+                {
+                    sql += " and cv.id_departamento = @id_departamento and cv.id_provincia = @id_provincia"; 
+                 }
+                else if (idDepartamento != null && idProvincia == null && idDistrito == null)
+                {
+                    sql += " and cv.id_departamento = @id_departamento"; 
+                }
+
+                sql += " group by da.id_militante,  (mil.nombres + ' ' + mil.apellidos) order by cant_votos desc";
+
+                using (SqlCommand command = new SqlCommand(sql, conn))
+                {
+                    if (idDepartamento != null && idProvincia != null && idDistrito != null)
+                    {
+                       command.Parameters.AddWithValue("@id_departamento", idDepartamento);
+                       command.Parameters.AddWithValue("@id_provincia", idProvincia);
+                       command.Parameters.AddWithValue("@id_distrito", idDistrito);
+                    }
+                    else if (idDepartamento != null && idProvincia != null && idDistrito == null)
+                    {
+                        command.Parameters.AddWithValue("@id_departamento", idDepartamento);
+                        command.Parameters.AddWithValue("@id_provincia", idProvincia);
+                    }
+                    else if (idDepartamento != null && idProvincia == null && idDistrito == null)
+                    {
+                        command.Parameters.AddWithValue("@id_departamento", idDepartamento);
+                    }
+
+                    IList<ResultadoVotacion> resultados = new List<ResultadoVotacion>();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            resultados.Add(LeerResultadoVotacion(reader));
+                        }
+                        return resultados.ToArray();
+                    }
+                }
+            }     
+        }
+
+        private ResultadoVotacion LeerResultadoVotacion(SqlDataReader reader)
+        {
+
+            return new ResultadoVotacion()
+            {
+                IdMilitante = (int)reader["id_militante"],
+                NombreCandidato = (string)reader["nombre_candidato"],
+                CantVotos = (int)reader["cant_votos"] 
+            };
+
+        }
     }
 }

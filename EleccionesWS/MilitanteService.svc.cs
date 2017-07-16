@@ -49,10 +49,11 @@ namespace EleccionesWS
             {
                 throw new FaultException("Filtro requerido", new FaultCode(Constantes.ERROR_FILTRO_LISTAR_MILITANTE_REQUERIDO));
             }
-            if (filtro.IdCargo == null)
+           /*if (filtro.IdCargo == null)
             {
                 throw new FaultException("Filtro requerido", new FaultCode(Constantes.ERROR_FILTRO_LISTAR_MILITANTE_REQUERIDO));
             }
+            * */
             return militanteDao.ListarMilitantes(filtro);
         }
     }

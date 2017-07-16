@@ -1,0 +1,3 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="EleccionesWS.ResultadosVotacionService" CodeBehind="ResultadosVotacionService.svc.cs"
+    Factory="System.ServiceModel.Activation.WebServiceHostFactory"
+     %>

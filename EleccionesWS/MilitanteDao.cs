@@ -50,11 +50,16 @@ namespace EleccionesWS
             if (filtro != null)
             {
                 sql += " where ";
+                if (filtro.IdCargo != null)
+                {
+                    sql += " id_cargo = @id_cargo";
+                }
+                else
+                {
+                    sql += " id_cargo is null";
+                }
             }
-            if (filtro.IdCargo != null)
-            {
-                sql+=" id_cargo = @id_cargo";
-            }
+            
             using (SqlConnection conn = ConnectionFactory.getConnection())
             {
                 conn.Open();
