@@ -16,7 +16,7 @@ namespace TestEleccionesWS
             JavaScriptSerializer js = new JavaScriptSerializer();
             String distritoSinActasRegistradas = "20";
             HttpWebRequest request = (HttpWebRequest)WebRequest
-                .Create("http://localhost:56837/ResultadosVotacionService.svc/resultados-votacion?idDepartamento=15&idProvincia=15&idDistrito="+distritoSinActasRegistradas);
+                .Create("http://localhost:56837/Service/ResultadosVotacionService.svc/resultados-votacion?idDepartamento=15&idProvincia=15&idDistrito="+distritoSinActasRegistradas);
             request.Method = "GET";
             try
             {
@@ -35,7 +35,7 @@ namespace TestEleccionesWS
             JavaScriptSerializer js = new JavaScriptSerializer();
             String distritoConActasRegistradas = "15";
             HttpWebRequest request = (HttpWebRequest)WebRequest
-                .Create("http://localhost:56837/ResultadosVotacionService.svc/resultados-votacion?idDepartamento=15&idProvincia=15&idDistrito=" + distritoConActasRegistradas);
+                .Create("http://localhost:56837/Service/ResultadosVotacionService.svc/resultados-votacion?idDepartamento=15&idProvincia=15&idDistrito=" + distritoConActasRegistradas);
             request.Method = "GET";
             
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();

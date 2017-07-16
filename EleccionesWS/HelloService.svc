@@ -1,3 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="EleccionesWS.HelloService" CodeBehind="HelloService.svc.cs" 
-    Factory="System.ServiceModel.Activation.WebServiceHostFactory"
-    %>

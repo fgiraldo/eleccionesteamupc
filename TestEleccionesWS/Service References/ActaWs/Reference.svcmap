@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7c8a108e-5ca5-4ec5-bbc7-3d3e5e75ae94" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56837/Service/ActaService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ActaService.xsd" MetadataType="Schema" ID="202efe15-c851-4a9a-92cb-ace3d8e454f5" SourceId="1" SourceUrl="http://localhost:56837/Service/ActaService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ActaService.disco" MetadataType="Disco" ID="4501d567-8a7f-4823-adcd-065a52cb9c3a" SourceId="1" SourceUrl="http://localhost:56837/Service/ActaService.svc?disco" />
+    <MetadataFile FileName="ActaService1.xsd" MetadataType="Schema" ID="d972a968-0739-4574-8b1e-9877cf013185" SourceId="1" SourceUrl="http://localhost:56837/Service/ActaService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ActaService2.xsd" MetadataType="Schema" ID="c1567927-f76e-4a3e-b50e-9e434cb9f3db" SourceId="1" SourceUrl="http://localhost:56837/Service/ActaService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ActaService.wsdl" MetadataType="Wsdl" ID="861c9e53-8138-4384-8ec0-570ee963650b" SourceId="1" SourceUrl="http://localhost:56837/Service/ActaService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

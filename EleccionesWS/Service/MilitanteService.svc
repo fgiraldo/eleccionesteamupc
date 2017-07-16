@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="EleccionesWS.Service.MilitanteService" CodeBehind="MilitanteService.svc.cs" %>

@@ -59,47 +59,42 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ActaService.svc" />
-    <Content Include="HelloService.svc" />
-    <Content Include="MesaService.svc" />
-    <Content Include="MilitanteService.svc" />
-    <Content Include="ResultadosVotacionService.svc" />
+    <Content Include="Service\ActaService.svc" />
+    <Content Include="Service\MesaService.svc" />
+    <Content Include="Service\MilitanteService.svc" />
+    <Content Include="Service\ResultadosVotacionService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Acta.cs" />
-    <Compile Include="ActaDao.cs" />
-    <Compile Include="ActaService.svc.cs">
+    <Compile Include="Domain\Acta.cs" />
+    <Compile Include="Dao\ActaDao.cs" />
+    <Compile Include="Service\ActaService.svc.cs">
       <DependentUpon>ActaService.svc</DependentUpon>
     </Compile>
-    <Compile Include="ConnectionFactory.cs" />
-    <Compile Include="Constantes.cs" />
-    <Compile Include="DetalleActa.cs" />
-    <Compile Include="Dominio\Test.cs" />
-    <Compile Include="FiltroListarMilitante.cs" />
-    <Compile Include="HelloService.svc.cs">
-      <DependentUpon>HelloService.svc</DependentUpon>
-    </Compile>
-    <Compile Include="IActaService.cs" />
-    <Compile Include="IHelloService.cs" />
-    <Compile Include="IMesaService.cs" />
-    <Compile Include="IMilitanteService.cs" />
-    <Compile Include="IResultadosVotacionService.cs" />
-    <Compile Include="Mesa.cs" />
-    <Compile Include="MesaDao.cs" />
-    <Compile Include="MesaService.svc.cs">
+    <Compile Include="Dao\ConnectionFactory.cs" />
+    <Compile Include="Service\Constantes.cs" />
+    <Compile Include="Domain\DetalleActa.cs" />
+    <Compile Include="Domain\Test.cs" />
+    <Compile Include="Domain\FiltroListarMilitante.cs" />
+    <Compile Include="Service\IActaService.cs" />
+    <Compile Include="Service\IMesaService.cs" />
+    <Compile Include="Service\IMilitanteService.cs" />
+    <Compile Include="Service\IResultadosVotacionService.cs" />
+    <Compile Include="Domain\Mesa.cs" />
+    <Compile Include="Dao\MesaDao.cs" />
+    <Compile Include="Service\MesaService.svc.cs">
       <DependentUpon>MesaService.svc</DependentUpon>
     </Compile>
-    <Compile Include="Militante.cs" />
-    <Compile Include="MilitanteDao.cs" />
-    <Compile Include="MilitanteService.svc.cs">
+    <Compile Include="Domain\Militante.cs" />
+    <Compile Include="Dao\MilitanteDao.cs" />
+    <Compile Include="Service\MilitanteService.svc.cs">
       <DependentUpon>MilitanteService.svc</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResultadosVotacionService.svc.cs">
+    <Compile Include="Service\ResultadosVotacionService.svc.cs">
       <DependentUpon>ResultadosVotacionService.svc</DependentUpon>
     </Compile>
-    <Compile Include="ResultadoVotacion.cs" />
+    <Compile Include="Domain\ResultadoVotacion.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

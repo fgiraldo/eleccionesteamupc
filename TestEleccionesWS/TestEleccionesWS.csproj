@@ -59,66 +59,94 @@
     <Compile Include="Constantes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultadoVotacion.cs" />
-    <Compile Include="Service References\Elecciones2\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\Elecciones\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="MilitanteServiceTest.cs" />
     <Compile Include="ResultadosVotacionServiceTest.cs" />
+    <Compile Include="Service References\ActaWs\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MesaWs\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MilitanteWs\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Service References\Elecciones2\ActaService.wsdl" />
-    <None Include="Service References\Elecciones2\ActaService.xsd" />
-    <None Include="Service References\Elecciones2\ActaService1.xsd" />
-    <None Include="Service References\Elecciones2\ActaService2.xsd" />
-    <None Include="Service References\Elecciones\MilitanteService.wsdl" />
-    <None Include="Service References\Elecciones\MilitanteService.xsd" />
-    <None Include="Service References\Elecciones\MilitanteService1.xsd" />
-    <None Include="Service References\Elecciones\MilitanteService2.xsd" />
-    <None Include="Service References\Elecciones\TestEleccionesWS.Elecciones.Militante.datasource">
+    <None Include="Service References\ActaWs\ActaService.wsdl" />
+    <None Include="Service References\ActaWs\ActaService.xsd" />
+    <None Include="Service References\ActaWs\ActaService1.xsd" />
+    <None Include="Service References\ActaWs\ActaService2.xsd" />
+    <None Include="Service References\MesaWs\MesaService.wsdl" />
+    <None Include="Service References\MesaWs\MesaService.xsd" />
+    <None Include="Service References\MesaWs\MesaService1.xsd" />
+    <None Include="Service References\MesaWs\MesaService2.xsd" />
+    <None Include="Service References\MesaWs\TestEleccionesWS.MesaWs.Mesa.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MilitanteWs\MilitanteService.wsdl" />
+    <None Include="Service References\MilitanteWs\MilitanteService.xsd" />
+    <None Include="Service References\MilitanteWs\MilitanteService1.xsd" />
+    <None Include="Service References\MilitanteWs\MilitanteService2.xsd" />
+    <None Include="Service References\MilitanteWs\TestEleccionesWS.MilitanteWs.Militante.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\Elecciones2\" />
-    <WCFMetadataStorage Include="Service References\Elecciones\" />
+    <WCFMetadataStorage Include="Service References\ActaWs\" />
+    <WCFMetadataStorage Include="Service References\MesaWs\" />
+    <WCFMetadataStorage Include="Service References\MilitanteWs\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\Elecciones\MilitanteService.disco" />
+    <None Include="Service References\ActaWs\ActaService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\Elecciones\configuration91.svcinfo" />
+    <None Include="Service References\ActaWs\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\Elecciones\configuration.svcinfo" />
+    <None Include="Service References\ActaWs\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\Elecciones\Reference.svcmap">
+    <None Include="Service References\ActaWs\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\Elecciones2\ActaService.disco" />
+    <None Include="Service References\MesaWs\MesaService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\Elecciones2\configuration91.svcinfo" />
+    <None Include="Service References\MesaWs\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\Elecciones2\configuration.svcinfo" />
+    <None Include="Service References\MesaWs\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\Elecciones2\Reference.svcmap">
+    <None Include="Service References\MesaWs\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MilitanteWs\MilitanteService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MilitanteWs\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MilitanteWs\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MilitanteWs\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

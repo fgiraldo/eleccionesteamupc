@@ -5,8 +5,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
-using  TestEleccionesWS.Elecciones;
-using  TestEleccionesWS.Elecciones2;
+using  TestEleccionesWS.ActaWs;
+using TestEleccionesWS.MesaWs;
 
 using System.Linq;
 using System.ServiceModel;

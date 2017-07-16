@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
-using TestEleccionesWS.Elecciones;
-using TestEleccionesWS.Elecciones2;
+using TestEleccionesWS.MilitanteWs;
+using TestEleccionesWS.ActaWs;
 
 using System.Linq;
 using System.ServiceModel;
