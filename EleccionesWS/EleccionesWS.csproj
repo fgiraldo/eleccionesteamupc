@@ -73,6 +73,7 @@
     <Compile Include="ConnectionFactory.cs" />
     <Compile Include="Constantes.cs" />
     <Compile Include="DetalleActa.cs" />
+    <Compile Include="Dominio\Test.cs" />
     <Compile Include="FiltroListarMilitante.cs" />
     <Compile Include="IActaService.cs" />
     <Compile Include="IMesaService.cs" />
@@ -91,7 +92,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Dominio\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
